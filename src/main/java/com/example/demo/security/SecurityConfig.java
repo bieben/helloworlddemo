@@ -21,7 +21,6 @@ public class SecurityConfig {
                         .anyRequest().permitAll()  // Allow all other routes
                 )
                 .formLogin(form -> form
-                        .loginPage("/login")  // Custom login page or default
                         .permitAll()
                 )
                 .httpBasic(basic -> basic  // Use lambda-based configuration for HTTP Basic authentication
